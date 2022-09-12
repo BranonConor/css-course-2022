@@ -1,0 +1,54 @@
+:root {
+  /* Typography */
+  --text-dark: #000000;
+  --text-light: #ffffff;
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Anek Telugu", sans-serif;
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+body {
+  color: var(--text-dark);
+  padding: var(--spacing-sm);
+  font-family: var(--body-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 94px;
+  letter-spacing: -1px;
+}
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 75px;
+  letter-spacing: -0.25px;
+}
+h3 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 40px;
+}
+h4 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 0.25px;
+}
+h5 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 28px;
+}
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.005em;
+}
