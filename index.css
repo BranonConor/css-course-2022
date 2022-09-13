@@ -9,6 +9,7 @@
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --spacing-xl: 64px;
+  --width-standard: 1080px;
   /* Colors */
   --bg-light: #ffffff;
 }
@@ -17,7 +18,10 @@ body {
   color: var(--text-dark);
   padding: var(--spacing-sm);
   font-family: var(--body-font);
-  background: black; /* -- TODO - remove after testing navbar styles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: flex-start;
 }
 
 h1 {
@@ -73,6 +77,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: var(--width-standard);
+  padding: 0 var(--spacing-md);
 }
 .menu {
   display: flex;
@@ -95,4 +101,11 @@ h6 {
 .navbar-button:hover {
   background: rgba(250, 250, 250, 0.5);
   cursor: pointer;
+}
+
+/* ----- HERO SECTION ----- */
+main {
+  max-width: var(--width-standard);
+  width: 100%;
+  padding: 0 var(--spacing-md);
 }
