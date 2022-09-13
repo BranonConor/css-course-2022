@@ -11,6 +11,9 @@
   --spacing-xl: 64px;
   --width-standard: 1144px; /* 1080 maxwidth + 32 px padding on each side */
   /* Colors */
+  --primary-accent: #0a2540;
+  --secondary-accent: #7000ff;
+  --primary-button-hover: #6d7a88;
   --bg-light: #ffffff;
 }
 
@@ -77,10 +80,18 @@ h6 {
 }
 p {
   margin: var(--spacing-md) 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 /* ----- BUTTONS ----- */
 .button-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--body-font);
   letter-spacing: 1.25px;
   font-size: 16px;
@@ -89,6 +100,30 @@ p {
   border: none;
   border-radius: 20px;
   color: var(--text-light);
+  background: var(--primary-accent);
+  transition: 0.15s ease all;
+}
+.button-primary:hover {
+  cursor: pointer;
+  background: var(--primary-button-hover);
+}
+.button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--body-font);
+  letter-spacing: 1.25px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  border: none;
+  background: transparent;
+  transition: 0.15s ease all;
+}
+.button-secondary:hover {
+  cursor: pointer;
+  background: transparent;
+  color: var(--primary-button-hover);
 }
 /* ----- LAYOUTS ----- */
 .two-column {
@@ -147,7 +182,6 @@ p {
 }
 .navbar-button:hover {
   background: rgba(250, 250, 250, 0.5);
-  cursor: pointer;
 }
 
 /* ----- HERO SECTION ----- */
@@ -157,7 +191,8 @@ main {
   padding: 0 var(--spacing-md);
   margin: var(--spacing-xl) 0 0 0;
 }
-.hero {
+.hero p {
+  max-width: 480px;
 }
 .hero > .hero-phone-container {
   align-items: flex-end;
@@ -170,7 +205,14 @@ main {
   transform: translateX(32px) translateY(-32px);
 }
 .hero .button-container {
+  display: flex;
   margin: var(--spacing-md) 0;
+}
+.hero .button-container button:nth-of-type(1) {
+  margin: 0 var(--spacing-md) 0 0;
+}
+.hero .button-container button:nth-of-type(2) {
+  color: var(--secondary-accent);
 }
 .gradient {
   width: 200%;
