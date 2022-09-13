@@ -89,9 +89,6 @@ p {
 
 /* ----- BUTTONS ----- */
 .button-primary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: var(--body-font);
   letter-spacing: 1.25px;
   font-size: 16px;
@@ -108,9 +105,6 @@ p {
   background: var(--primary-button-hover);
 }
 .button-secondary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: var(--body-font);
   letter-spacing: 1.25px;
   font-size: 16px;
@@ -119,12 +113,25 @@ p {
   border: none;
   background: transparent;
   transition: 0.15s ease all;
+  color: var(--primary-accent);
 }
 .button-secondary:hover {
   cursor: pointer;
   background: transparent;
-  color: var(--primary-button-hover);
+  opacity: 0.75;
 }
+.with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.with-icon img {
+  transition: 0.25s ease all;
+}
+.with-icon:hover > img {
+  transform: translateX(4px);
+}
+
 /* ----- LAYOUTS ----- */
 .two-column {
   width: 100%;
