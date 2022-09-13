@@ -29,6 +29,7 @@ h1 {
   font-weight: 600;
   font-size: 94px;
   letter-spacing: -1px;
+  line-height: 108px;
 }
 h2 {
   font-family: var(--heading-font);
@@ -71,6 +72,21 @@ h6 {
   border-radius: 20px;
   color: var(--text-light);
 }
+/* ----- LAYOUTS ----- */
+.two-column {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.two-column .col-left {
+  width: 50%;
+  padding: 0 var(--spacing-md) 0 0;
+}
+.two-column .col-right {
+  width: 50%;
+  padding: 0 0 0 var(--spacing-md);
+}
 
 /* ----- NAVBAR ----- */
 .navbar {
@@ -78,7 +94,9 @@ h6 {
   align-items: center;
   justify-content: space-between;
   max-width: var(--width-standard);
+  width: 100%;
   padding: 0 var(--spacing-md);
+  margin: 0 0 var(--spacing-xl);
 }
 .menu {
   display: flex;
@@ -108,4 +126,65 @@ main {
   max-width: var(--width-standard);
   width: 100%;
   padding: 0 var(--spacing-md);
+  margin: var(--spacing-xl) 0 0 0;
+}
+.hero {
+}
+.gradient {
+  width: 200%;
+  height: 1000px;
+  position: absolute;
+  left: -50%;
+  top: -600px;
+  z-index: -1;
+  transform: rotate(-10deg);
+  background: linear-gradient(
+    277deg,
+    #22f3be,
+    #c422f3,
+    #ff9400,
+    #ff00df,
+    #f94325,
+    #7600ff
+  );
+  background-size: 1200% 1200%;
+
+  -webkit-animation: LiveGradient 30s ease infinite;
+  -moz-animation: LiveGradient 30s ease infinite;
+  animation: LiveGradient 30s ease infinite;
+}
+
+/* ----- ANIMATIONS ----- */
+@-webkit-keyframes LiveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes LiveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes LiveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
