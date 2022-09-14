@@ -88,6 +88,15 @@ p {
   font-size: 18px;
   line-height: 26px;
 }
+a {
+  text-decoration: none;
+  color: var(--purple-1);
+  font-weight: 500;
+  transition: 0.25s ease all;
+}
+a:hover {
+  color: var(--primary-accent);
+}
 .subtitle1 {
   font-family: var(--heading-font);
   font-style: normal;
@@ -292,6 +301,13 @@ main {
 .unified-platform-section h3 {
   width: 50%;
   margin: 0 0 var(--spacing-md);
+}
+.unified-platform-section button.button-primary {
+  margin: var(--spacing-md) 0;
+  background: var(--purple-1);
+}
+.unified-platform-section button.button-primary:hover {
+  background: var(--primary-accent);
 }
 
 /* ----- ANIMATIONS ----- */
