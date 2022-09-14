@@ -12,9 +12,11 @@
   --width-standard: 1144px; /* 1080 maxwidth + 32 px padding on each side */
   /* Colors */
   --primary-accent: #0a2540;
-  --secondary-accent: #7000ff;
+  --purple-1: #6962f7;
+  --purple-2: #7000ff;
   --primary-button-hover: #6d7a88;
-  --bg-light: #ffffff;
+  --bg-white: #ffffff;
+  --bg-light: #f7f9fc;
 }
 
 body {
@@ -85,6 +87,14 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+}
+.subtitle1 {
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--purple-1);
 }
 
 /* ----- BUTTONS ----- */
@@ -222,7 +232,7 @@ main {
   margin: 0 var(--spacing-md) 0 0;
 }
 .hero .button-container button:nth-of-type(2) {
-  color: var(--secondary-accent);
+  color: var(--purple-2);
 }
 .gradient {
   width: 200%;
@@ -261,6 +271,27 @@ main {
   width: 200px;
   height: 60px;
   place-self: center;
+}
+
+/* UNIFIED PLATFORM SECTION */
+.unified-platform-section {
+  padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
+  background: var(--bg-light);
+  position: relative;
+}
+.unified-platform-section::after {
+  content: "";
+  background: var(--bg-light);
+  width: 1000%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+}
+.unified-platform-section h3 {
+  width: 50%;
+  margin: 0 0 var(--spacing-md);
 }
 
 /* ----- ANIMATIONS ----- */
