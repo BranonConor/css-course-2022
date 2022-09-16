@@ -17,6 +17,8 @@
   --primary-button-hover: #6d7a88;
   --bg-white: #ffffff;
   --bg-light: #f7f9fc;
+  /* Shadow */
+  --standard-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -274,7 +276,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   column-gap: var(--spacing-md);
-  row-gap: var(--spacing-md);
+  row-gap: var(--spacing-lg);
 }
 .partners-grid img {
   width: 200px;
@@ -308,6 +310,54 @@ main {
 }
 .unified-platform-section button.button-primary:hover {
   background: var(--primary-accent);
+}
+
+/* ----- GRAPHIC GRID ----- */
+/* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname; */
+.graphic-grid {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+  column-gap: var(--spacing-lg);
+  row-gap: var(--spacing-lg);
+  background-color: var(--bg-light);
+  position: relative;
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-xl) 0;
+}
+.graphic-grid::before {
+  content: "";
+  background: var(--bg-light);
+  width: 1000%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+}
+.graphic-grid #credit-card {
+  width: 100%;
+  grid-area: card;
+  box-shadow: var(--standard-shadow);
+  border-radius: 20px;
+}
+.graphic-grid #slack-invoice {
+  width: 100%;
+  grid-area: slack;
+  box-shadow: var(--standard-shadow);
+  border-radius: 20px;
+}
+.graphic-grid #phone {
+  width: 100%;
+  grid-area: phone;
+}
+.graphic-grid #dash {
+  width: 100%;
+  grid-area: dash;
+  box-shadow: var(--standard-shadow);
+  border-radius: 20px;
 }
 
 /* ----- ANIMATIONS ----- */
