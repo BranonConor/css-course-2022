@@ -222,6 +222,21 @@ main {
 }
 .hero {
   width: 100%;
+  position: relative;
+}
+.hero h1 {
+  mix-blend-mode: overlay;
+}
+.hero .overlay {
+  width: 50%;
+  padding: 0 16px 0 0;
+  box-sizing: border-box;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 2;
 }
 .hero p {
   max-width: 480px;
@@ -247,29 +262,18 @@ main {
 .hero .button-container button:nth-of-type(2) {
   color: var(--purple-2);
 }
-.gradient {
+#gradient-canvas {
   width: 200%;
   height: 970px;
   position: absolute;
   left: -50%;
   top: -600px;
-  z-index: 1;
   transform: rotate(-10deg);
-  background: linear-gradient(
-    277deg,
-    #22f3be,
-    #c422f3,
-    #ff9400,
-    #ff00df,
-    #f94325,
-    #7600ff
-  );
-  background-size: 1200% 1200%;
-  opacity: 0.6;
-
-  -webkit-animation: LiveGradient 25s ease infinite;
-  -moz-animation: LiveGradient 25s ease infinite;
-  animation: LiveGradient 25s ease infinite;
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #ffba27;
+  z-index: -1;
 }
 /* ----- PARTNERS GRID ----- */
 .partners-grid {
@@ -361,39 +365,4 @@ main {
   grid-area: dash;
   box-shadow: var(--standard-shadow);
   border-radius: 20px;
-}
-
-/* ----- ANIMATIONS ----- */
-@-webkit-keyframes LiveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes LiveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes LiveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
