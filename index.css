@@ -109,6 +109,14 @@ a:hover {
   line-height: 26px;
   color: var(--purple-1);
 }
+.subtitle2 {
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--blue-1);
+}
 
 /* ----- BUTTONS ----- */
 .button-primary {
@@ -382,9 +390,9 @@ main {
   content: "";
   background: var(--primary-accent);
   width: 200%;
-  height: 1000px;
+  height: 1100px;
   position: absolute;
-  top: 0;
+  top: -32px;
   left: -50%;
   z-index: -1;
   transform: skewY(-10deg);
@@ -406,4 +414,13 @@ main {
 }
 .integrations-section .button-primary:hover {
   background: var(--bg-white);
+}
+#api-code {
+  max-width: 470px;
+  border-radius: 20px;
+  margin: 0 0 var(--spacing-md) 0;
+}
+#terminal-code {
+  max-width: 470px;
+  border-radius: 20px;
 }
