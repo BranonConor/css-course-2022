@@ -10,10 +10,12 @@
   --spacing-lg: 32px;
   --spacing-xl: 64px;
   --width-standard: 1144px; /* 1080 maxwidth + 32 px padding on each side */
+  --bg-rotation: rotate(-10deg);
   /* Colors */
   --primary-accent: #0a2540;
   --purple-1: #6962f7;
   --purple-2: #7000ff;
+  --blue-1: #00d4ff;
   --primary-button-hover: #6d7a88;
   --bg-white: #ffffff;
   --bg-light: #f7f9fc;
@@ -268,7 +270,7 @@ main {
   position: absolute;
   left: -50%;
   top: -600px;
-  transform: rotate(-10deg);
+  transform: var(--bg-rotation);
   --gradient-color-1: #ef008f;
   --gradient-color-2: #6ec3f4;
   --gradient-color-3: #7038ff;
@@ -332,7 +334,7 @@ main {
   row-gap: var(--spacing-lg);
   background-color: var(--bg-light);
   position: relative;
-  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-xl) 0;
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) 0;
 }
 .graphic-grid::before {
   content: "";
@@ -365,4 +367,43 @@ main {
   grid-area: dash;
   box-shadow: var(--standard-shadow);
   border-radius: 20px;
+}
+
+/* ----- INTEGRATIONS SECTION ----- */
+.integrations-section {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  color: var(--text-light);
+  z-index: 1;
+  padding: calc(var(--spacing-xl) * 3) 0;
+}
+.integrations-section::before {
+  content: "";
+  background: var(--primary-accent);
+  width: 200%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  z-index: -1;
+  transform: skewY(-10deg);
+}
+.integrations-section::after {
+  content: "";
+  background: var(--bg-light);
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  z-index: -2;
+}
+.integrations-section .button-primary {
+  background: var(--blue-1);
+  color: var(--primary-accent);
+  margin: var(--spacing-md) 0 0 0;
+}
+.integrations-section .button-primary:hover {
+  background: var(--bg-white);
 }
