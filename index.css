@@ -456,7 +456,7 @@ main {
 
 /* ----- WHY SWIPE SECTION ----- */
 .why-swipe-section {
-  padding: calc(var(--spacing-xl) * 3) 0 0 0;
+  padding: calc(var(--spacing-xl) * 3) 0 calc(var(--spacing-xl) * 3) 0;
 }
 .why-swipe-section h3 {
   width: 65%;
@@ -470,4 +470,48 @@ main {
   padding: 0 var(--spacing-sm) 0 0;
   margin: 0 var(--spacing-md) 0 0;
   box-sizing: border-box;
+}
+
+/* ----- GLOBAL SECTION ----- */
+.global-section {
+  width: 100%;
+  position: relative;
+  color: var(--text-light);
+  z-index: 1;
+  padding: calc(var(--spacing-xl) * 3) 0;
+}
+.global-section::before {
+  content: "";
+  background: var(--primary-accent);
+  width: 200%;
+  height: 1100px;
+  position: absolute;
+  top: -32px;
+  left: -50%;
+  z-index: -1;
+  transform: skewY(-10deg);
+}
+.global-section::after {
+  content: "";
+  background: var(--bg-light);
+  width: 200%;
+  height: 50%; /* This ensures that the background that peaks above the slanted blue background doesn't peak on the bottom either */
+  position: absolute;
+  top: 0;
+  left: -50%;
+  z-index: -2;
+}
+.global-section .button-primary {
+  background: var(--blue-1);
+  color: var(--primary-accent);
+  margin: var(--spacing-md) 0 0 0;
+}
+.global-section .button-primary:hover {
+  background: var(--bg-white);
+}
+.global-section .col-right img {
+  max-width: 844px;
+  position: absolute;
+  top: 10%;
+  opacity: 25%;
 }
