@@ -501,13 +501,10 @@ main {
   left: -50%;
   z-index: -2;
 }
-.global-section .button-primary {
-  background: var(--blue-1);
-  color: var(--primary-accent);
-  margin: var(--spacing-md) 0 0 0;
-}
-.global-section .button-primary:hover {
-  background: var(--bg-white);
+.global-section h6 {
+  border-left: 2px solid var(--blue-1);
+  padding: 0 0 0 var(--spacing-sm);
+  line-height: 28px;
 }
 .global-section .col-right img {
   max-width: 844px;
