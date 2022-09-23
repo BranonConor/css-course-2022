@@ -13,6 +13,13 @@
   --bg-rotation: rotate(-10deg);
   /* Colors */
   --primary-accent: #0a2540;
+  --primary-gradient: linear-gradient(
+    101.33deg,
+    #08209a 0.76%,
+    #6563ff 33.33%,
+    #36c5f0 76.92%,
+    #83e2ff 96.96%
+  );
   --purple-1: #6962f7;
   --purple-2: #7000ff;
   --blue-1: #00d4ff;
@@ -31,7 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-direction: flex-start;
+  justify-content: flex-start;
   width: 100%;
   overflow-x: hidden;
 }
@@ -478,7 +485,7 @@ main {
   position: relative;
   color: var(--text-light);
   z-index: 1;
-  padding: calc(var(--spacing-xl) * 3) 0;
+  padding: calc(var(--spacing-xl) * 3) 0 0 0;
 }
 .global-section::before {
   content: "";
@@ -490,16 +497,6 @@ main {
   left: -50%;
   z-index: -1;
   transform: skewY(-10deg);
-}
-.global-section::after {
-  content: "";
-  background: var(--bg-light);
-  width: 200%;
-  height: 50%; /* This ensures that the background that peaks above the slanted blue background doesn't peak on the bottom either */
-  position: absolute;
-  top: 0;
-  left: -50%;
-  z-index: -2;
 }
 .global-section h6 {
   border-left: 2px solid var(--blue-1);
@@ -527,4 +524,98 @@ main {
   padding: 0 var(--spacing-sm) 0 0;
   margin: 0 var(--spacing-md) 0 0;
   box-sizing: border-box;
+}
+
+/* ----- VIRTUAL EVENT SECTION ----- */
+.virtual-event-section {
+  position: relative;
+  z-index: 2;
+  background: var(--bg-white);
+  padding: calc(var(--spacing-xl) * 2) 0 calc(var(--spacing-xl) * 2) 0;
+}
+.virtual-event-section::before {
+  content: "";
+  background: var(--bg-white);
+  width: 1000%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+}
+.virtual-event-section button {
+  margin: var(--spacing-md) 0 0 0;
+  background: var(--purple-1);
+}
+.virtual-event-section button:hover {
+  background: var(--primary-accent);
+}
+.virtual-event-section .two-column .col-left {
+  box-sizing: border-box;
+  padding: 0 var(--spacing-xl) 0 0;
+  justify-content: center;
+  min-height: 446px;
+}
+.virtual-event-section .two-column {
+  height: auto;
+}
+.swipe-sessions-card {
+  width: 540px;
+  height: 446px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--standard-shadow);
+}
+.swipe-sessions-card .top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.swipe-sessions-card .top::before {
+  content: "";
+  background: var(--primary-gradient);
+  position: absolute;
+  top: -40%;
+  z-index: 0;
+  width: 100%;
+  height: 150%;
+  transform: skewY(-5deg);
+}
+.swipe-sessions-card .top img {
+  position: relative;
+  z-index: 4;
+  width: 338px;
+}
+.swipe-sessions-card .top .avatar-wrapper {
+  position: absolute;
+  width: 140px;
+  height: 80px;
+  z-index: 4;
+  bottom: -70px;
+  left: var(--spacing-xl);
+}
+.swipe-sessions-card .top .avatar-wrapper img {
+  width: 80px;
+  position: absolute;
+}
+.avatar-wrapper img:nth-of-type(2) {
+  left: 57px;
+}
+.swipe-sessions-card .bottom {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  padding: calc(var(--spacing-xl) + var(--spacing-lg)) var(--spacing-xl)
+    var(--spacing-sm) var(--spacing-xl);
+}
+.swipe-sessions-card .bottom p {
+  margin: 0;
+}
+.swipe-sessions-card .bottom .body2 {
+  width: 50%;
+  margin: var(--spacing-sm) 0 0 0;
 }
