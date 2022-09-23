@@ -619,3 +619,39 @@ main {
   width: 50%;
   margin: var(--spacing-sm) 0 0 0;
 }
+
+/* ----- GET STARTED SECTION ----- */
+.get-started-section {
+  position: relative;
+  z-index: 2;
+  background: var(--bg-white);
+  padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
+}
+.get-started-section button {
+  margin: var(--spacing-md) 0 0 0;
+  background: var(--purple-1);
+}
+.get-started-section button:hover {
+  background: var(--primary-accent);
+}
+.get-started-section .two-column .col-left {
+  box-sizing: border-box;
+  padding: 0 var(--spacing-xl) 0 0;
+}
+.get-started-section .two-column .col-right {
+  flex-direction: row;
+}
+.get-started-section .two-column .col-right .card {
+  width: 50%;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+  box-sizing: border-box;
+}
+.get-started-section .two-column .col-right .card p {
+  margin: var(--spacing-sm) 0;
+}
+.get-started-section .two-column .col-right .card button {
+  background: transparent;
+  color: var(--purple-2);
+  margin: var(--spacing-sm) 0;
+}
