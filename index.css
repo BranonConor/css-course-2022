@@ -504,6 +504,9 @@ main {
   margin: 0 var(--spacing-md) 0 0;
   box-sizing: border-box;
 }
+.why-swipe-section .card-container .card .body2 {
+  color: var(--text-dark);
+}
 
 /* ----- GLOBAL SECTION ----- */
 .global-section {
@@ -655,6 +658,16 @@ main {
   background: var(--bg-white);
   padding: var(--spacing-xl) 0 calc(var(--spacing-xl) * 2) 0;
   box-sizing: border-box;
+}
+.get-started-section::before {
+  content: "";
+  background: var(--bg-white);
+  width: 1000%;
+  height: 110%;
+  position: absolute;
+  top: -32px;
+  left: -100%;
+  z-index: -1;
 }
 .get-started-section button {
   margin: var(--spacing-md) 0 0 0;
@@ -830,6 +843,9 @@ main {
   }
 
   /* ----- INTEGRATIONS SECTION ----- */
+  .integrations-section {
+    padding: calc(var(--spacing-xl) * 3) 0 var(--spacing-lg) 0;
+  }
   .integrations-section .card-container {
     flex-direction: column;
     margin: var(--spacing-xl) 0;
@@ -846,5 +862,32 @@ main {
   }
   .integrations-section .body2 {
     margin: 0 0 var(--spacing-md) 0;
+  }
+
+  /* ----- WHY SWIPE SECTION ----- */
+  .why-swipe-section {
+    padding: var(--spacing-xl) 0 calc(var(--spacing-xl * 2)) 0;
+  }
+  .why-swipe-section .card-container {
+    margin: var(--spacing-lg) 0;
+    flex-wrap: wrap; /* Anything that pushes beyond 100% for the row pushes that item to the next row */
+  }
+  .why-swipe-section .card-container .card {
+    margin: var(--spacing-md) 0;
+    padding: 0 var(--spacing-md) 0;
+    width: 50%; /* with flex-wrap: wrap, allows for 2 items per row */
+  }
+
+  /* ----- GLOBAL SECTION ----- */
+  .global-section::before {
+    height: 2000px;
+  }
+  .global-section .card-container {
+    flex-wrap: wrap;
+  }
+  .global-section .card-container .card {
+    margin: var(--spacing-md) 0;
+    padding: 0 var(--spacing-md) 0;
+    width: 50%;
   }
 }
