@@ -1097,4 +1097,7 @@ main {
   .footer .icon-link img {
     width: 20px;
   }
+  .footer #footer-logo {
+    width: 64px;
+  }
 }
