@@ -936,7 +936,7 @@ main {
     /* Typography */
     --h1-size: 44px;
     --h1-height: 52px;
-    --h3-size: 34px;
+    --h3-size: 30px;
     --h4-size: 32px;
     --h6-size: 15px;
   }
@@ -951,9 +951,11 @@ main {
   }
   .two-column .col-left {
     width: 100%;
+    padding: 0;
   }
   .two-column .col-right {
     width: 100%;
+    padding: 0;
   }
   .button-primary {
     padding: 4px 8px;
@@ -965,6 +967,9 @@ main {
   }
   .button-secondary {
     font-size: 15px;
+  }
+  .card .icon {
+    height: 30px;
   }
 
   /* ----- NAVBAR ----- */
@@ -984,5 +989,106 @@ main {
   }
   .hero .overlay {
     width: 90%;
+  }
+  .hero .col-right {
+    display: none;
+  }
+
+  /* ----- PARTNERS GRID ----- */
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ----- UNIFIED PLATFORM SECTION ----- */
+  .unified-platform-section h3 {
+    width: 100%;
+  }
+
+  /* ----- GRAPHIC GRID ----- */
+  .graphic-grid {
+    column-gap: var(--spacing-md);
+    row-gap: var(--spacing-md);
+  }
+  .graphic-grid #slack-invoice,
+  .graphic-grid #credit-card,
+  .graphic-grid #dash {
+    border-radius: 5px;
+  }
+
+  /* ----- INTEGRATIONS SECTION ----- */
+  .integrations-section {
+    padding: calc(var(--spacing-xl) * 2) 0;
+  }
+  .integrations-section .col-right img {
+    display: none;
+  }
+
+  /* ----- WHY SWIPE SECTION ----- */
+  .why-swipe-section {
+    padding: var(--spacing-xl) 0 calc(var(--spacing-xl) * 2) 0;
+  }
+  .why-swipe-section h3 {
+    width: 100%;
+  }
+  .why-swipe-section .card-container .card {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* ----- GLOBAL SECTION ----- */
+  .global-section {
+    padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
+  }
+  .global-section .col-right img {
+    opacity: 0.1;
+    top: 300px;
+  }
+  .global-section .card-container {
+    margin: 0 0 var(--spacing-lg) 0;
+  }
+  .global-section .card-container .card {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* ----- VIRTUAL EVENT SECTION ----- */
+  .virtual-event-section {
+    padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
+  }
+  .virtual-event-section .swipe-sessions-card {
+    margin: var(--spacing-md) 0;
+  }
+  .virtual-event-section .swipe-sessions-card img {
+    width: 150px;
+  }
+
+  /* ----- GET STARTED SECTION ----- */
+  .get-started-section {
+    padding: 0 0 var(--spacing-xl) 0;
+  }
+  .get-started-section .col-right {
+    flex-wrap: wrap;
+  }
+  .get-started-section .two-column .col-right .card {
+    width: 100%;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+  }
+
+  /* ----- FOOTER ----- */
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer .col {
+    width: 50%;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+  }
+  .footer a,
+  .footer .icon-link {
+    font-size: 12px;
+  }
+  .footer .icon-link img {
+    width: 20px;
   }
 }
