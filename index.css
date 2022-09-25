@@ -3,6 +3,7 @@
   /* Typography */
   --text-dark: #000000;
   --text-light: #ffffff;
+  --text-grey: #adbdcc;
   --body-font: "Roboto", sans-serif;
   --heading-font: "Anek Telugu", sans-serif;
   --h1-size: 94px;
@@ -150,6 +151,7 @@ a:hover {
   font-size: var(--body2-size);
   line-height: var(--body2-height);
   letter-spacing: 0.25px;
+  color: var(--text-grey);
 }
 
 /* ----- BUTTONS ----- */
@@ -389,7 +391,7 @@ main {
   row-gap: var(--spacing-lg);
   background-color: var(--bg-light);
   position: relative;
-  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) 0;
+  padding: var(--spacing-lg) 0 var(--spacing-lg) 0;
   box-sizing: border-box;
 }
 .graphic-grid::before {
@@ -751,10 +753,10 @@ main {
     --h1-height: 72px;
     --h2-size: 50px;
     --h2-height: 75px;
-    --h3-size: 40px;
+    --h3-size: 34px;
     --h4-size: 32px;
     --h5-size: 28px;
-    --h6-size: 22px;
+    --h6-size: 15px;
     --p-size: 18px;
     --p-height: 26px;
     --subtitle-size: 17px;
@@ -770,6 +772,9 @@ main {
   }
   body {
     padding: 32px;
+  }
+  main {
+    padding: 0;
   }
 
   /* ----- NAVBAR ----- */
@@ -815,5 +820,31 @@ main {
     height: 628px;
     transform: translateX(48px) translateY(-32px);
     z-index: 2;
+  }
+
+  /* ----- PARTNERS GRID ----- */
+  .partners-grid img {
+    width: 100%;
+    height: auto;
+    place-self: center;
+  }
+
+  /* ----- INTEGRATIONS SECTION ----- */
+  .integrations-section .card-container {
+    flex-direction: column;
+    margin: var(--spacing-xl) 0;
+  }
+  .integrations-section .card-container .card {
+    width: 100%;
+    margin: 0 0 var(--spacing-md) 0;
+  }
+  .integrations-section::before {
+    top: var(--spacing-xl);
+  }
+  .integrations-section h6 {
+    margin: var(--spacing-md) 0;
+  }
+  .integrations-section .body2 {
+    margin: 0 0 var(--spacing-md) 0;
   }
 }
