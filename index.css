@@ -647,7 +647,7 @@ main {
   position: relative;
   z-index: 2;
   background: var(--bg-white);
-  padding: var(--spacing-xl) 0 calc(var(--spacing-xl) * 3) 0;
+  padding: var(--spacing-xl) 0 calc(var(--spacing-xl) * 2) 0;
   box-sizing: border-box;
 }
 .get-started-section button {
