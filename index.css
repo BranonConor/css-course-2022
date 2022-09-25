@@ -736,6 +736,11 @@ main {
 
 /* MOBILE */
 @media (max-width: 480px) {
+  /* ----- HERO SECTION ----- */
+}
+
+/* TABLET */
+@media (max-width: 768px) {
   :root {
     /* Typography */
     --h1-size: 44px;
@@ -761,8 +766,4 @@ main {
   }
 
   /* ----- HERO SECTION ----- */
-}
-
-/* TABLET */
-@media (max-width: 767px) {
 }
