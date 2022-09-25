@@ -655,3 +655,23 @@ main {
   color: var(--purple-2);
   margin: var(--spacing-sm) 0;
 }
+
+/* ----- FOOTER ----- */
+.footer {
+  padding: var(--spacing-lg) 0;
+  width: 100%;
+  display: flex;
+}
+.footer .col {
+  width: 25%;
+  padding: var(--spacing-md);
+}
+.footer .icon-link {
+  display: flex;
+  align-items: center;
+  margin: var(--spacing-sm) 0;
+}
+.footer .icon-link img {
+  width: 24px;
+  margin: 0 var(--spacing-sm) 0 0;
+}
