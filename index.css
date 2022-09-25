@@ -4,6 +4,20 @@
   --text-light: #ffffff;
   --body-font: "Roboto", sans-serif;
   --heading-font: "Anek Telugu", sans-serif;
+  --h1-size: 94px;
+  --h1-height: 108px;
+  --h2-size: 50px;
+  --h2-height: 75px;
+  --h3-size: 40px;
+  --h4-size: 32px;
+  --h5-size: 28px;
+  --h6-size: 22px;
+  --p-size: 18px;
+  --p-height: 26px;
+  --subtitle-size: 17px;
+  --subtitle-height: 26px;
+  --body2-size: 14px;
+  --body2-height: 18px;
   /* Spacing */
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -46,17 +60,17 @@ body {
 h1 {
   font-family: var(--heading-font);
   font-weight: 600;
-  font-size: 94px;
+  font-size: var(--h1-size);
   letter-spacing: -1px;
-  line-height: 108px;
+  line-height: var(--h1-height);
   width: 100%;
   margin: 0;
 }
 h2 {
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 50px;
-  line-height: 75px;
+  font-size: var(--h2-size);
+  line-height: var(--h2-height);
   letter-spacing: -0.25px;
   width: 100%;
   margin: 0;
@@ -64,14 +78,14 @@ h2 {
 h3 {
   font-family: var(--heading-font);
   font-weight: 600;
-  font-size: 40px;
+  font-size: var(--h3-size);
   width: 100%;
   margin: 0;
 }
 h4 {
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 32px;
+  font-size: var(--h4-size);
   letter-spacing: 0.25px;
   width: 100%;
   margin: 0;
@@ -79,14 +93,14 @@ h4 {
 h5 {
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 28px;
+  font-size: var(--h5-size);
   width: 100%;
   margin: 0;
 }
 h6 {
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 22px;
+  font-size: var(--h6-size);
   letter-spacing: 0.005em;
   width: 100%;
   margin: 0;
@@ -96,8 +110,8 @@ p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: var(--p-size);
+  line-height: var(--p-height);
 }
 a {
   text-decoration: none;
@@ -112,23 +126,23 @@ a:hover {
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: var(--subtitle-size);
+  line-height: var(--subtitle-height);
   color: var(--purple-1);
 }
 .subtitle2 {
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: var(--subtitle-size);
+  line-height: var(--subtitle-height);
   color: var(--blue-1);
 }
 .body2 {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: var(--body2-size);
+  line-height: var(--body2-height);
   letter-spacing: 0.25px;
 }
 
@@ -666,12 +680,11 @@ main {
 
 /* ----- FOOTER ----- */
 .footer {
-  padding: calc(var(--spacing-xl) * 2) 0 calc(var(--spacing-xl) * 2) 0;
+  padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
   width: 100%;
   display: flex;
   position: relative;
   z-index: 2;
-  max-height: 245px;
   box-sizing: border-box;
 }
 .footer::before {
@@ -690,6 +703,7 @@ main {
 }
 .footer .col {
   width: 25%;
+  height: 100%;
   padding: var(--spacing-md);
   display: flex;
   flex-direction: column;
@@ -720,6 +734,29 @@ main {
 /* ----- RESPONSIVE BREAKPOINT STYLES ----- */
 /* MOBILE */
 @media only screen and (min-width: 320px) {
+  :root {
+    /* Typography */
+    --h1-size: 94px;
+    --h1-height: 108px;
+    --h2-size: 50px;
+    --h2-height: 75px;
+    --h3-size: 40px;
+    --h4-size: 32px;
+    --h5-size: 28px;
+    --h6-size: 22px;
+    --p-size: 18px;
+    --p-height: 26px;
+    --subtitle-size: 17px;
+    --subtitle-height: 26px;
+    --body2-size: 14px;
+    --body2-height: 18px;
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    --width-standard: 1144px; /* 1080 maxwidth + 32 px padding on each side */
+  }
 }
 /* TABLET */
 @media only screen and (min-width: 768px) {
