@@ -816,13 +816,6 @@ main {
     z-index: 2;
   }
 
-  /* ----- PARTNERS GRID ----- */
-  .partners-grid img {
-    width: 100%;
-    height: auto;
-    place-self: center;
-  }
-
   /* ----- INTEGRATIONS SECTION ----- */
   .integrations-section {
     padding: calc(var(--spacing-xl) * 3) 0 var(--spacing-lg) 0;
@@ -957,17 +950,6 @@ main {
     width: 100%;
     padding: 0;
   }
-  .button-primary {
-    padding: 4px 8px;
-    font-size: 15px;
-    font-weight: normal;
-  }
-  .button-primary.with-icon {
-    padding: 4px 4px 4px 8px;
-  }
-  .button-secondary {
-    font-size: 15px;
-  }
   .card .icon {
     height: 30px;
   }
@@ -989,6 +971,7 @@ main {
   }
   .hero .overlay {
     width: 90%;
+    padding: 0;
   }
   .hero .col-right {
     display: none;
@@ -1099,5 +1082,41 @@ main {
   }
   .footer #footer-logo {
     width: 64px;
+  }
+}
+
+/* ----- CUSTOM BREAKPOINT STYLES ----- */
+@media only screen and (max-width: 715px) {
+  .hero-phone {
+    height: 400px;
+    transform: translateY(40px);
+  }
+}
+@media only screen and (max-width: 850px) {
+  :root {
+    /* Typography */
+    --h1-size: 64px;
+    --h1-height: 72px;
+  }
+  .button-primary {
+    padding: 4px 8px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .button-primary.with-icon {
+    padding: 4px 4px 4px 8px;
+  }
+  .button-secondary {
+    font-size: 15px;
+  }
+  /* ----- HERO SECTION ----- */
+  .hero-phone {
+    z-index: -1;
+  }
+  /* ----- PARTNERS GRID ----- */
+  .partners-grid img {
+    width: 100%;
+    height: auto;
+    place-self: center;
   }
 }
