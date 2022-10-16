@@ -1,4 +1,4 @@
-# CSS Course 2022
+# 🎨 CSS Course 2022 🎨
 
 Welcome to the CSS 2022 Course!
 
