@@ -16,6 +16,8 @@ h4,
 h5,
 h6 {
   font-family: "Bitter", serif;
+  box-sizing: border-box;
+  font-weight: 500;
 }
 
 h1 {
@@ -24,27 +26,22 @@ h1 {
   letter-spacing: -1.5px;
 }
 h2 {
-  font-weight: 300;
   font-size: 50px;
   letter-spacing: -0.5px;
 }
 h3 {
-  font-weight: 400;
   font-size: 38px;
   letter-spacing: 0px;
 }
 h4 {
-  font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.25px;
 }
 h5 {
-  font-weight: 500;
   font-size: 24px;
   letter-spacing: 0px;
 }
 h6 {
-  font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.15px;
 }
@@ -52,12 +49,17 @@ code {
   font-weight: bold;
   color: #e95400;
 }
+p {
+  width: 100%;
+}
 .quote {
   font-style: italic;
   font-size: 14px;
   border-left: 2px solid #e95400;
   padding-left: 16px;
   margin: 32px 0 32px 32px;
+  box-sizing: border-box;
+
   color: black;
 }
 .quote span {
@@ -92,6 +94,7 @@ code {
 /* ----- CONTENT SECTION ----- */
 .content {
   padding: 64px 32px;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -127,4 +130,22 @@ code {
 }
 .content h3 {
   text-transform: capitalize;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8639e8;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  max-width: 900px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  color: white;
 }
