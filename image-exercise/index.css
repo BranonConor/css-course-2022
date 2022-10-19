@@ -93,7 +93,7 @@ a::after {
   right: 0;
   height: 50px;
   width: 50px;
-  background: white;
+  background: black;
   transition: 1s ease all;
   z-index: -2;
   border-radius: 100%;
