@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Play", sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -66,11 +66,11 @@ a {
 .hero .content {
   max-width: 1000px;
   color: white;
-  font-family: "Play", sans-serif;
-  padding: 32px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  margin: 64px 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 16px 32px 32px 32px;
+  background: black;
+  border-radius: 4px;
+  margin: 16px 0 0 0;
 }
 
 /* FANCY STUFF */
