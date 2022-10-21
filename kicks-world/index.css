@@ -1,6 +1,13 @@
 body {
   font-family: "Nunito", sans-serif;
   padding: 60px 32px;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Mrs Sheppards", cursive;
+  text-align: left;
 }
 .nav {
   position: fixed;
@@ -15,7 +22,6 @@ body {
 }
 .nav h1 {
   color: white;
-  font-family: "Mrs Sheppards", cursive;
 }
 .nav img {
   width: 50px;
@@ -24,4 +30,27 @@ body {
   top: -10px;
   transform: rotate(-40deg);
   padding: 0 8px 0 0;
+}
+.container {
+  display: flex;
+  padding: 32px 0;
+}
+.column-left,
+.column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid black;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.column-left {
+  width: 25%;
+}
+.column-right {
+  width: 75%;
+}
+.column-left a {
+  margin: 16px 0;
 }
