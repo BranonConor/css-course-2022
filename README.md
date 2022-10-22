@@ -6,15 +6,19 @@ This repo contains all of the exercises used in the 2022 CSS Course by Colt Stee
 
 ## The Projects
 
-### Typography Project
+### Blog Post (Typography Project)
 
 The Typography project is a small exercise in which we build a small web page with various typography styles to get a feel for working with fonts.
 
-### Image Hero
+### Deep Blue Digital (Image Project)
 
 Image Hero is a small project in which we build a Hero section of a website.
 
-### Swipe
+### Kicks World (Positioning Project)
+
+Kicks World is a medium project where we create a shoe store product page, leveraging a lot of different positioning styles. 
+
+### Swipe (**Big** Project)
 
 Swipe is the big, final project of the course! Swipe is a fictitious payments API company, with a super snappy and well-designed UI. By building Swipe, we tie together all or the course concepts covered and more!
 
