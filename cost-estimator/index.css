@@ -185,6 +185,7 @@ h1 {
   display: flex;
 }
 .card {
+  position: relative;
   background: rgb(250, 247, 255);
   padding: 16px;
   box-sizing: border-box;
@@ -193,4 +194,31 @@ h1 {
   -webkit-box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
+  color: rgb(83, 49, 156);
+}
+.card .top-section p {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin: 4px 0;
+}
+.card .top-section .price {
+  font-size: 42px;
+  color: rgb(44, 44, 44);
+}
+
+.card .save {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 100%;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
