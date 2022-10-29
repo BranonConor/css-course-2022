@@ -160,7 +160,8 @@ h1 {
     rgba(53, 10, 74, 1) 36%,
     rgba(83, 49, 156, 1) 100%
   );
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -262,4 +263,24 @@ h1 {
 .card button:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+/* ----- RESPONSIVE STYLES ----- */
+@media only screen and (max-width: 720px) {
+  .card-wrapper {
+    flex-wrap: wrap;
+  }
+  .card {
+    min-width: 100%;
+    margin: 16px 0 64px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 16px;
+    overflow: hidden;
+  }
+  .sessions-card {
+    width: 100%;
+  }
 }
