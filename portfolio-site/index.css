@@ -4,17 +4,45 @@ html {
 }
 
 body {
-  padding: 16px;
+  padding: 0 16px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .nav {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 90%;
+}
+.nav .left {
+  font-size: 32px;
+  font-weight: bold;
+}
+.nav .right {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .right p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nav .right img {
+  width: 24px;
+  height: 24px;
+}
+.nav .right img:hover {
+  cursor: pointer;
 }
 
-.grid-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 .project-grid {
   display: grid;
   grid-template-areas:
@@ -28,7 +56,8 @@ body {
   column-gap: 16px;
   row-gap: 16px;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
+  max-width: 90%;
 }
 #eth {
   grid-area: eth;
