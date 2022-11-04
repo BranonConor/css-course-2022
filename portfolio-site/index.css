@@ -157,7 +157,13 @@ body {
     grid-template-areas:
       "eth eth"
       "alphabet alphabet"
-      "astro astro";
+      "astro astro"
+      "traveler traveler"
+      "cube cube"
+      "insta insta"
+      "cup cup"
+      "foam foam"
+      "dimensional dimensional";
     column-gap: 0;
   }
 }
