@@ -159,6 +159,10 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
+  .project-grid .project .overlay {
+    font-size: 24px;
+    text-align: center;
+  }
   .nav {
     max-width: 100%;
   }
