@@ -138,6 +138,8 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #8639e8;
+  padding: 8px 16px;
+  box-sizing: border-box;
 }
 footer ul {
   display: flex;
@@ -146,7 +148,16 @@ footer ul {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   color: white;
   padding: 0;
+}
+footer ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  footer ul {
+    flex-direction: column;
+  }
 }
