@@ -59,7 +59,6 @@ p {
   padding-left: 16px;
   margin: 32px 0 32px 32px;
   box-sizing: border-box;
-
   color: black;
 }
 .quote span {
@@ -157,6 +156,10 @@ footer ul li:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .quote {
+    margin: 32px 0 16px 8px;
+    width: calc(100% - 24px);
+  }
   footer ul {
     flex-direction: column;
   }
