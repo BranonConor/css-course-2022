@@ -9,7 +9,7 @@ body {
 }
 
 .hero {
-  background-image: url(https://images.unsplash.com/photo-1487967380170-6de32c5fdf43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+  background-image: url(https://images.unsplash.com/photo-1470690096659-6f59b9b39fd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1796&q=80);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -48,7 +48,6 @@ body {
   width: auto;
   text-align: center;
 }
-
 a {
   width: 100vw;
   position: absolute;
@@ -70,8 +69,16 @@ a {
 }
 a:hover {
   background: black;
+  color: rgb(255, 58, 91);
 }
 
+.hero .section-header {
+  width: 100%;
+  text-align: center;
+}
+.hero .section-header h2 {
+  color: rgb(255, 58, 91);
+}
 .hero .content {
   width: 100%;
   color: white;
@@ -129,5 +136,12 @@ a:hover {
   }
   .hero .content {
     padding: 32px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
   }
 }
