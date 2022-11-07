@@ -10,13 +10,17 @@ This repo contains all of the exercises used in the 2022 CSS Course by Colt Stee
 
 The Typography project is a small exercise in which we build a small web page with various typography styles to get a feel for working with fonts.
 
-### Deep Blue Digital (Image Project)
+### Bloom Digital (Image Project)
 
 Image Hero is a small project in which we build a Hero section of a website.
 
 ### Kicks World (Positioning Project)
 
 Kicks World is a medium project where we create a shoe store product page, leveraging a lot of different positioning styles. 
+
+### Cost Estimator (Flexbox Project) ###
+
+### Portfolio Project (Grid Project) ###
 
 ### Swipe (**Big** Project)
 
