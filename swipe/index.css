@@ -1120,3 +1120,10 @@ main {
     place-self: center;
   }
 }
+@media only screen and (max-width: 400px) {
+  :root {
+    /* Typography */
+    --h1-size: 52px;
+    --h1-height: 64px;
+  }
+}
