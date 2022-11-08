@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  padding: 0;
+  padding: 32px;
   margin: 0;
   background: rgb(233, 223, 255);
   display: flex;
@@ -24,7 +24,7 @@ body {
 }
 h1 {
   color: rgb(83, 49, 156);
-  margin: 64px 0;
+  margin: 32px 0 64px 0;
 }
 
 /* ----- TABS ----- */
@@ -273,14 +273,44 @@ h1 {
   .card {
     min-width: 100%;
     margin: 16px 0 64px 0;
+    padding: 0 16px 16px 16px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .container {
+  body {
     padding: 16px;
+    font-size: 14px;
+  }
+  .container {
+    padding: 0 16px;
     overflow: hidden;
   }
   .sessions-card {
     width: 100%;
+  }
+  .card-wrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .card {
+    width: 100%;
+    margin: 16px 0;
+  }
+  .line {
+    top: 93px;
+  }
+  .slider .progress {
+    width: 28%;
+  }
+  .slider .point {
+    left: 26%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .slider .progress {
+    width: 23%;
+  }
+  .slider .point {
+    left: 20%;
   }
 }
