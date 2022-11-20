@@ -63,54 +63,65 @@ button:hover {
   width: 100%;
   text-align: center;
 }
-.section-header h2 {
-  color: rgb(255, 58, 91);
-}
-.content {
+.favorites-section {
   width: 100%;
-  color: white;
+  background: white;
   font-family: "Montserrat", sans-serif;
   padding: 64px 128px;
   box-sizing: border-box;
-  background: black;
 }
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 32px 0;
+  width: 100%;
+  margin: 0 auto;
 }
-.card {
+.favorites-section .card {
+  display: inline-block;
   text-align: center;
-  width: 33.33%;
-  padding: 32px 16px;
+  width: 33%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgb(23, 23, 23);
-  margin: 8px;
+  padding: 8px;
   transition: 0.2s ease all;
 }
-.card img {
-  width: 60px;
-  margin-bottom: 16px;
+.favorites-section .card img {
+  width: 100%;
 }
-.card:hover {
+.favorites-section .card:hover {
   transform: translateY(-8px);
-  -webkit-box-shadow: 0px 4px 18px 4px rgba(255, 158, 213, 0.2);
-  -moz-box-shadow: 0px 4px 18px 4px rgba(255, 158, 213, 0.2);
-  box-shadow: 0px 4px 18px 4px rgba(255, 158, 213, 0.2);
 }
 
-.pixels {
-  font-size: 16px;
+.image-strip {
+  background-image: url(https://images.unsplash.com/photo-1648693956698-ad30bf033b35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: saturate(110%);
+  width: 100%;
+  height: 400px;
 }
-.ems {
-  font-size: 1em;
+
+.journal-section {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 64px 128px;
+  box-sizing: border-box;
+  background: #38383b;
+  color: white;
 }
-.rems {
-  font-size: 1rem;
+.journal-section .card {
+  display: inline-block;
+  text-align: center;
+  width: 49.5%;
+  box-sizing: border-box;
+  padding: 8px;
+  transition: 0.2s ease all;
+  overflow: hidden;
+}
+.journal-section .card img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+.journal-section .card:hover {
+  transform: translateY(-8px);
 }
 
 @media only screen and (max-width: 768px) {
