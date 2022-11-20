@@ -145,11 +145,14 @@ footer p {
   .journal-section .card img {
     height: 330px;
   }
-}
-@media only screen and (max-width: 1100px) {
   .journal-section .card {
     width: 100%;
     margin: 32px 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero .intro {
+    padding: 20% 5%;
   }
 }
 @media only screen and (max-width: 768px) {
