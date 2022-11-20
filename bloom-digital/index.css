@@ -33,9 +33,12 @@ body {
 .hero .headline {
   letter-spacing: 5px;
 }
-.hero .intro h1 {
-  text-align: center;
+h1 {
   font-size: 64px;
+}
+h1,
+h2 {
+  text-align: center;
   font-family: "Dela Gothic One", cursive;
 }
 .hero .intro p {
@@ -122,6 +125,17 @@ button:hover {
 }
 .journal-section .card:hover {
   transform: translateY(-8px);
+}
+
+footer {
+  margin: auto;
+  background: white;
+}
+footer p {
+  padding: 16px 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Dela Gothic One", cursive;
 }
 
 @media only screen and (max-width: 768px) {
