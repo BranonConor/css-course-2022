@@ -1,0 +1,48 @@
+body {
+  font-family: "Forum", cursive;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.hero-section {
+  background: #f08e80;
+  height: 90vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  color: white;
+  padding: 24px 32px;
+  box-sizing: border-box;
+}
+header .links {
+  width: auto;
+}
+header .links a {
+  margin: 0 16px 0 0;
+  font-size: 1.2rem;
+}
+header p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 8px 0 0 0;
+}
+header button {
+  box-sizing: border-box;
+  padding: 16px 24px;
+  color: #f08e80;
+  background: white;
+  border: none;
+}
+header button:hover {
+  opacity: 0.8;
+}
