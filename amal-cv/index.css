@@ -46,3 +46,35 @@ header button {
 header button:hover {
   opacity: 0.8;
 }
+.hero-content {
+  padding: 0 15%;
+  color: white;
+}
+.hero-content .tagline {
+  font-size: 3.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 32px 0;
+}
+.hero-content .two-column-section {
+  display: inline-block;
+  font-size: 2rem;
+}
+.hero-content .two-column-section p {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+.hero-content .two-column-section ul {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0;
+}
+.hero-content .two-column-section ul li {
+  width: 50%;
+  margin: 8px 0;
+  float: left;
+  font-size: 1.25rem;
+}
