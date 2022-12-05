@@ -57,6 +57,7 @@ header button:hover {
   padding: 32px 0;
 }
 .hero-content .two-column-section {
+  width: 100%;
   display: inline-block;
   font-size: 2rem;
 }
