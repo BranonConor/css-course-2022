@@ -111,3 +111,35 @@ header button:hover {
   font-size: 0.9rem;
   margin: 0 0 32px 0;
 }
+
+/* EVENT SECTION */
+.events-section {
+  background: #fdf0e6;
+  padding: 64px 0;
+}
+.events-section .events-content .events-card {
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+.events-section .events-content div p {
+  margin: 8px 0;
+  float: none;
+}
+.events-section .events-card p {
+  width: 100%;
+}
+.events-section .events-content {
+  padding: 0 15%;
+}
+.events-section .events-title {
+  font-size: 1.5rem;
+}
+.events-section .events-description {
+  font-size: 1rem;
+}
+.events-section .events-content .events-card .events-date {
+  color: grey;
+  font-size: 0.9rem;
+  margin: 0 0 32px 0;
+}
