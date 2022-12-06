@@ -56,12 +56,12 @@ header button:hover {
   letter-spacing: 2px;
   padding: 32px 0;
 }
-.hero-content .two-column-section {
+.two-column-section {
   width: 100%;
   display: inline-block;
   font-size: 2rem;
 }
-.hero-content .two-column-section p {
+.two-column-section p {
   width: 50%;
   display: inline-block;
   float: left;
@@ -78,4 +78,36 @@ header button:hover {
   margin: 8px 0;
   float: left;
   font-size: 1.25rem;
+}
+
+/* BLOG SECTION */
+.blog-section {
+  background: white;
+  padding: 64px 0;
+}
+.blog-section .blog-content .blog-card {
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+.blog-section .blog-content div p {
+  margin: 8px 0;
+  float: none;
+}
+.blog-section .blog-card p {
+  width: 100%;
+}
+.blog-section .blog-content {
+  padding: 0 15%;
+}
+.blog-section .blog-title {
+  font-size: 1.5rem;
+}
+.blog-section .blog-description {
+  font-size: 1rem;
+}
+.blog-section .blog-content .blog-card .blog-date {
+  color: grey;
+  font-size: 0.9rem;
+  margin: 0 0 32px 0;
 }
