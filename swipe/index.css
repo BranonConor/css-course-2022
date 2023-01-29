@@ -54,7 +54,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   position: relative;
 }
@@ -439,22 +439,22 @@ main {
 .integrations-section::before {
   content: "";
   background: var(--primary-accent);
-  width: 200%;
+  width: 400%;
   height: 1100px;
   position: absolute;
   top: -32px;
-  left: -50%;
+  left: -150%;
   z-index: -1;
   transform: skewY(-10deg);
 }
 .integrations-section::after {
   content: "";
   background: var(--bg-light);
-  width: 200%;
+  width: 400%;
   height: 50%; /* This ensures that the background that peaks above the slanted blue background doesn't peak on the bottom either */
   position: absolute;
   top: 0;
-  left: -50%;
+  left: -150%;
   z-index: -2;
 }
 .integrations-section .button-primary {
@@ -521,7 +521,7 @@ main {
   content: "";
   background: var(--primary-accent);
   width: 200%;
-  height: 1100px;
+  height: 1200px;
   position: absolute;
   top: -32px;
   left: -50%;
