@@ -471,11 +471,11 @@ main {
 .integrations-section::after {
   content: "";
   background: var(--bg-light);
-  width: 400%;
+  width: 100%;
   height: 50%; /* This ensures that the background that peaks above the slanted blue background doesn't peak on the bottom either */
   position: absolute;
   top: 0;
-  left: -150%;
+  left: 0;
   z-index: -2;
 }
 .integrations-section .button-primary {
@@ -545,11 +545,11 @@ main {
 .global-section::before {
   content: "";
   background: var(--primary-accent);
-  width: 200%;
+  width: 100%;
   height: 1200px;
   position: absolute;
   top: -32px;
-  left: -50%;
+  left: 0;
   z-index: -1;
   transform: skewY(-10deg);
 }
