@@ -583,6 +583,9 @@ main {
 
 /* ----- VIRTUAL EVENT SECTION ----- */
 .virtual-event-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   position: relative;
   z-index: 2;
   background: var(--bg-white);
