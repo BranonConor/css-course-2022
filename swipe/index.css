@@ -534,6 +534,8 @@ main {
 /* ----- GLOBAL SECTION ----- */
 .global-section {
   width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
   color: var(--text-light);
   z-index: 1;
