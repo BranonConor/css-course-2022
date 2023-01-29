@@ -60,7 +60,7 @@ body {
 }
 body {
   margin: 0;
-  padding: var(--spacing-sm) var(--spacing-sm) 0 var(--spacing-sm);
+  padding: var(--spacing-sm) 0 0 0;
   box-sizing: border-box;
 }
 
@@ -237,6 +237,10 @@ a:hover {
   width: auto;
   margin: 0 0 var(--spacing-sm) 0;
 }
+.section-container {
+  width: 100%;
+  max-width: var(--width-standard);
+}
 
 /* ----- NAVBAR ----- */
 .navbar {
@@ -271,22 +275,26 @@ a:hover {
 .navbar-button:hover {
   background: rgba(250, 250, 250, 0.5);
 }
+
 /* ----- HERO SECTION ----- */
 main {
-  max-width: var(--width-standard);
   width: 100%;
-  padding: 0 var(--spacing-md);
   margin: var(--spacing-xl) 0 0 0;
 }
 .hero {
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hero .col-left {
   position: relative;
 }
 .hero h1 {
   mix-blend-mode: overlay;
 }
 .hero .overlay {
-  width: 50%;
+  width: 100%;
   padding: 0 16px 0 0;
   box-sizing: border-box;
   mix-blend-mode: normal;
@@ -299,7 +307,7 @@ main {
 .hero p {
   max-width: 480px;
 }
-.hero > .hero-phone-container {
+.hero .hero-phone-container {
   align-items: flex-end;
   position: relative;
   height: 564px;
@@ -333,7 +341,12 @@ main {
   --gradient-color-4: #ffba27;
   z-index: -1;
 }
-/* ----- PARTNERS GRID ----- */
+/* ----- PARTNERS SECTION ----- */
+.partners-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .partners-grid {
   width: 100%;
   margin: var(--spacing-xl) 0;
@@ -355,6 +368,8 @@ main {
   background: var(--bg-light);
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 .unified-platform-section::after {
   content: "";
@@ -378,7 +393,12 @@ main {
   background: var(--primary-accent);
 }
 
-/* ----- GRAPHIC GRID ----- */
+/* ----- GRAPHIC SECTION ----- */
+.graphic-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname; */
 .graphic-grid {
   width: 100%;
@@ -435,26 +455,28 @@ main {
   z-index: 1;
   padding: calc(var(--spacing-xl) * 3) 0;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 .integrations-section::before {
   content: "";
   background: var(--primary-accent);
-  width: 400%;
+  width: 100%;
   height: 1100px;
   position: absolute;
   top: -32px;
-  left: -150%;
+  left: 0;
   z-index: -1;
   transform: skewY(-10deg);
 }
 .integrations-section::after {
   content: "";
   background: var(--bg-light);
-  width: 400%;
+  width: 100%;
   height: 50%; /* This ensures that the background that peaks above the slanted blue background doesn't peak on the bottom either */
   position: absolute;
   top: 0;
-  left: -150%;
+  left: 0;
   z-index: -2;
 }
 .integrations-section .button-primary {
@@ -488,6 +510,8 @@ main {
 
 /* ----- WHY SWIPE SECTION ----- */
 .why-swipe-section {
+  display: flex;
+  justify-content: center;
   padding: calc(var(--spacing-xl) * 3) 0 calc(var(--spacing-xl) * 3) 0;
   box-sizing: border-box;
 }
@@ -511,6 +535,8 @@ main {
 /* ----- GLOBAL SECTION ----- */
 .global-section {
   width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
   color: var(--text-light);
   z-index: 1;
@@ -520,11 +546,11 @@ main {
 .global-section::before {
   content: "";
   background: var(--primary-accent);
-  width: 200%;
+  width: 100%;
   height: 1200px;
   position: absolute;
   top: -32px;
-  left: -50%;
+  left: 0;
   z-index: -1;
   transform: skewY(-10deg);
 }
@@ -558,6 +584,9 @@ main {
 
 /* ----- VIRTUAL EVENT SECTION ----- */
 .virtual-event-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   position: relative;
   z-index: 2;
   background: var(--bg-white);
@@ -654,6 +683,9 @@ main {
 
 /* ----- GET STARTED SECTION ----- */
 .get-started-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
   z-index: 2;
   background: var(--bg-white);
@@ -704,6 +736,7 @@ main {
   padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
   width: 100%;
   display: flex;
+  justify-content: center;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
@@ -721,6 +754,9 @@ main {
 #footer-logo {
   max-width: 108px;
   margin: 0 0 var(--spacing-md) 0;
+}
+.footer .section-container {
+  display: flex;
 }
 .footer .col {
   width: 25%;
@@ -764,16 +800,13 @@ main {
     --h4-size: 32px;
     --h6-size: 15px;
   }
-  body {
-    padding: 32px 32px 0 32px;
-  }
-  main {
-    padding: 0;
+  .section-container {
+    padding: var(--spacing-lg) var(--spacing-lg) 0 var(--spacing-lg);
   }
 
   /* ----- NAVBAR ----- */
   .navbar {
-    padding: 0;
+    padding: 0 var(--spacing-md);
   }
   .menu {
     display: none;
@@ -830,6 +863,7 @@ main {
   }
   .integrations-section::before {
     top: var(--spacing-xl);
+    height: 1150px;
   }
   .integrations-section h6 {
     margin: var(--spacing-md) 0;
@@ -924,7 +958,7 @@ main {
 }
 
 /* MOBILE */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   :root {
     /* Typography */
     --h1-size: 44px;
@@ -933,12 +967,10 @@ main {
     --h4-size: 32px;
     --h6-size: 15px;
   }
-  body {
-    padding: 16px 16px 0 16px;
+  .section-container {
+    padding: 0 var(--spacing-md) 0 var(--spacing-md);
   }
-  main {
-    padding: 0;
-  }
+
   .two-column {
     flex-direction: column;
   }
@@ -1003,7 +1035,7 @@ main {
     padding: calc(var(--spacing-xl) * 2) 0 var(--spacing-xl) 0;
   }
   .integrations-section::before {
-    height: 1000px;
+    height: 850px;
   }
   .integrations-section .col-right img {
     display: none;
@@ -1065,11 +1097,12 @@ main {
   }
 
   /* ----- FOOTER ----- */
-  .footer {
+  .footer .section-container {
     flex-wrap: wrap;
   }
   .footer .col {
     width: 50%;
+    height: 50%;
     padding: 0;
     margin: var(--spacing-md) 0;
   }
@@ -1086,10 +1119,9 @@ main {
 }
 
 /* ----- CUSTOM BREAKPOINT STYLES ----- */
-@media only screen and (max-width: 715px) {
-  .hero-phone {
-    height: 400px;
-    transform: translateY(40px);
+@media only screen and (max-width: 1144px) {
+  .section-container {
+    padding: 0 var(--spacing-md) 0 var(--spacing-md);
   }
 }
 @media only screen and (max-width: 850px) {
@@ -1120,10 +1152,19 @@ main {
     place-self: center;
   }
 }
+@media only screen and (max-width: 715px) {
+  .hero-phone {
+    height: 400px;
+    transform: translateY(40px);
+  }
+}
 @media only screen and (max-width: 400px) {
   :root {
     /* Typography */
     --h1-size: 52px;
     --h1-height: 64px;
+  }
+  .integrations-section::before {
+    height: 950px;
   }
 }
