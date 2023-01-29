@@ -271,6 +271,9 @@ a:hover {
 .navbar-button:hover {
   background: rgba(250, 250, 250, 0.5);
 }
+.section-container {
+  max-width: var(--width-standard);
+}
 /* ----- HERO SECTION ----- */
 main {
   max-width: var(--width-standard);
