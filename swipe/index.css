@@ -341,7 +341,12 @@ main {
   --gradient-color-4: #ffba27;
   z-index: -1;
 }
-/* ----- PARTNERS GRID ----- */
+/* ----- PARTNERS SECTION ----- */
+.partners-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .partners-grid {
   width: 100%;
   margin: var(--spacing-xl) 0;
