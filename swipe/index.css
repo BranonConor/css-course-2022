@@ -368,6 +368,8 @@ main {
   background: var(--bg-light);
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 .unified-platform-section::after {
   content: "";
@@ -392,6 +394,11 @@ main {
 }
 
 /* ----- GRAPHIC GRID ----- */
+.graphic-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname; */
 .graphic-grid {
   width: 100%;
