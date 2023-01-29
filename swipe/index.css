@@ -509,6 +509,8 @@ main {
 
 /* ----- WHY SWIPE SECTION ----- */
 .why-swipe-section {
+  display: flex;
+  justify-content: center;
   padding: calc(var(--spacing-xl) * 3) 0 calc(var(--spacing-xl) * 3) 0;
   box-sizing: border-box;
 }
