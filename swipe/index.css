@@ -60,7 +60,7 @@ body {
 }
 body {
   margin: 0;
-  padding: var(--spacing-sm) var(--spacing-sm) 0 var(--spacing-sm);
+  padding: var(--spacing-sm) 0 0 0;
   box-sizing: border-box;
 }
 
@@ -278,7 +278,6 @@ a:hover {
 /* ----- HERO SECTION ----- */
 main {
   width: 100%;
-  padding: 0 var(--spacing-md);
   margin: var(--spacing-xl) 0 0 0;
 }
 .hero {
@@ -393,7 +392,7 @@ main {
   background: var(--primary-accent);
 }
 
-/* ----- GRAPHIC GRID ----- */
+/* ----- GRAPHIC SECTION ----- */
 .graphic-section {
   width: 100%;
   display: flex;
@@ -455,15 +454,17 @@ main {
   z-index: 1;
   padding: calc(var(--spacing-xl) * 3) 0;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 .integrations-section::before {
   content: "";
   background: var(--primary-accent);
-  width: 400%;
+  width: 100%;
   height: 1100px;
   position: absolute;
   top: -32px;
-  left: -150%;
+  left: 0;
   z-index: -1;
   transform: skewY(-10deg);
 }
